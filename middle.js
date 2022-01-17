@@ -2,12 +2,15 @@ const middle = function(arr) {
   let arrLength = arr.length;
   let mid = Math.floor(arr.length / 2);
   if (arrLength <= 2) {
-    console.log([]);
+    return [];
   } else if (arrLength % 2 === 1) {
-    console.log([arr[mid]]);
+    return [arr[mid]];
   } else if (arrLength % 2 === 0) {
-    console.log([arr[mid - 1], arr[mid]]);
+    return [arr[mid - 1], arr[mid]];
   }
 };
+
+middle([1, 2, 3, 4, 5]); // => [3]
+middle([1, 2, 3, 4]); // => [2, 3]
 
 module.exports = middle;

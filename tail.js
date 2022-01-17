@@ -1,5 +1,3 @@
-const assertEqual = require('./assertEqual');
-
 const tail = function(arr) {
   return arr.filter(i => i !== arr[0]);
 };
